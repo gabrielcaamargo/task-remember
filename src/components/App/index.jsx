@@ -2,10 +2,12 @@ import React from 'react';
 
 import { Container } from './style';
 
+import Header from '../Header';
+
 export default function App(){
   return(
     <Container>
-      <h1>a</h1>
+      <Header />
     </Container>
   )
 }
