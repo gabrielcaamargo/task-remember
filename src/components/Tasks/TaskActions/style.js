@@ -8,7 +8,6 @@ export const Button = styled.button`
     font-size: 22px;
     margin-left: 10px;
     transition: .3s;
-
   }
   
   .task-done:hover{
@@ -19,4 +18,12 @@ export const Button = styled.button`
     color: red;
   }
 
+
+  @media (max-width: 600px){
+    svg{
+      /* margin-right: -px; */
+      text-align: right;
+    }
+    justify-content: flex-end;
+  }
 `

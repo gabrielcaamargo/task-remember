@@ -5,10 +5,13 @@ import TaskActions from './TaskActions';
 
 import { TaskWrapper } from './styles'
 
-export default function Tasks(){
+export default function Tasks(props){
   return (
     <TaskWrapper>
-      <TaskInfo />
+      <TaskInfo 
+        title = {props.title}
+        subtitle = {props.subtitle}
+      />
       <TaskActions />
     </TaskWrapper>
   )

@@ -2,15 +2,15 @@ import React from 'react';
 
 import { TaskInfoWrapper, TaskTitle, TaskDescription } from './styles';
 
-export default function TaskInfo(){
+export default function TaskInfo({title, subtitle}){
   return(
     <TaskInfoWrapper>
       <TaskTitle>
-        Título da task
+        {title}
       </TaskTitle>
 
       <TaskDescription>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse aliquid alias et animi eos quibusdam soluta labore saepe, facere blanditiis aut rerum optio! Quisquam cum aut natus ab. Consequatur, quisquam.
+        {subtitle}
       </TaskDescription>
     </TaskInfoWrapper>
   )
